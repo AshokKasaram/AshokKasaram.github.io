@@ -9,528 +9,556 @@
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
+    <style>
+      /*======================================
+      //--//-->   ABOUT
+      ======================================*/
 
+      .about-mf .box-shadow-full {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
 
-<style>
+      .about-mf .about-img {
+        margin-bottom: 2rem;
+      }
 
-/*======================================
-//--//-->   ABOUT
-======================================*/
+      .about-mf .about-img img {
+        margin-left: 10px;
+      }
 
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+      .skill-mf .progress {
+        margin: 0.5rem 0 1.2rem 0;
+        border-radius: 0;
+        height: 0.7rem;
+      }
 
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
+      .skill-mf .progress .progress-bar {
+        height: 0.7rem;
+        background-color: #ffbd39;
+      }
 
-.about-mf .about-img img {
-  margin-left: 10px;
-}
+      /* Typing animation (currently unused, kept minimal if needed later) */
+      #typing-animation {
+        position: relative;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        overflow: hidden;
+        white-space: nowrap;
+      }
 
+      /* Project image zoom effect */
+      .block-20 {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 8px;
+        background: none !important; /* override template bg-image */
+      }
 
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
+      .project-img {
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain; /* show whole image */
+      }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
+      .zoom-effect img {
+        transition: transform 0.4s ease;
+      }
 
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
+      .zoom-effect:hover img {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
+
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
-	  
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Ashok Kasaram</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ashok Kasaram</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<!-- <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/AshokImage.jpg);"> -->
-				<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/AshokImage.jpg); background-size: 75%; background-position: center; background-repeat: no-repeat;">
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Ashok Kasaram</span></h1>
+    <section id="home-section" class="hero">
+      <div class="home-slider owl-carousel">
+        <div class="slider-item">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+              <div class="one-third js-fullheight order-md-last img"
+                   style="background-image:url(images/AshokImage.jpg); background-size: 75%; background-position: center; background-repeat: no-repeat;">
+                <div class="overlay"></div>
+              </div>
+              <div class="one-forth d-flex align-items-center ftco-animate"
+                   data-scrollax=" properties: { translateY: '70%' }">
+                <div class="text">
+                  <span class="subheading">Hello!</span>
+                  <h1 class="mb-4 mt-3">I'm <span>Ashok Kasaram</span></h1>
 
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-                        <!--
-						<script>
+                  <span id="typing-animation"></span>
 
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Data Engineer ',			
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-						-->
-
-						<br>
-						<br>
-			            <h2>A Data Science Professional</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://www.linkedin.com/in/ashok-kasaram-7822151b4" class="btn btn-primary py-3 px-4">Linkedin</a> 
-							<a href="https://github.com/AshokKasaram" class="btn btn-white btn-outline-white py-3 px-4">Github</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
+                  <br><br>
+                  <h2>A Data Science Professional</h2>
+                  <p>
+                    <a href="https://www.linkedin.com/in/ashok-kasaram-7822151b4" class="btn btn-primary py-3 px-4">LinkedIn</a>
+                    <a href="https://github.com/AshokKasaram" class="btn btn-white btn-outline-white py-3 px-4">Github</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-
-
 
     <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/AshokImage.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Ashok Kasaram</span></p>
-										<p><span class="title-s">Job Role: </span> <span>Data Science Professional</span></p>
-										<p><span class="title-s">Experience: </span> <span>3 Years </span></p>
-										<p><span class="title-s">Address: </span> <span>Miami, Florida, USA</span></p>
-									  </div>
-									</div>
-								  </div>
-								  <div class="skill-mf">
-									<p class="title-s">Skills</p>
-								
-									<span>SQL</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								
-									<span>Python</span> <span class="pull-right">95%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								
-									<span>Data Visualization (Power BI, Tableau, Matplotlib, Seaborn)</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								
-									<span>Machine Learning & Predictive Modeling</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								
-									<span>Big Data & Cloud (Azure, AWS, Databricks, Apache Spark)</span> <span class="pull-right">80%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								
-									<span>MLOps & Model Deployment (MLflow, Docker, Kubernetes)</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								
-									<span>Natural Language Processing (NLP, Transformers, BERT)</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-								</div>								
-						
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I’m Ashok Kasaram, a Data Scientist driven by a deep passion for solving real-world problems through AI and data-driven storytelling. With over three years of experience in data science, machine learning, and cloud computing, I have built scalable AI solutions, optimized data pipelines, and applied predictive modeling to drive measurable business impact. I recently completed my Master’s in Data Science & Artificial Intelligence at Florida International University with a GPA of 3.86.
-									My work centers on transforming raw data into meaningful insights, automating workflows with AI, and developing intelligent systems that enhance decision-making. Whether it’s building robust machine learning models, designing real-time dashboards, or deploying scalable AI architectures, I thrive on uncovering hidden patterns and enabling data-driven innovation. I am especially fascinated by Generative AI, Responsible AI, and the ethical dimensions of machine learning—fields that are shaping the next generation of intelligent systems.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Data Scientist | Machine Learning Engineer | AI Researcher</span></li>
-									<li class="d-flex"><span>Domain Expertise:</span> <span>Retail, E-commerce, BFSI, Digital Marketing, Utilities, Healthcare</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Master’s in Data Science & AI, Florida International University</span></li>
-									<li class="d-flex"><span>Programming:</span> <span>Python, R, SQL, Java, JavaScript, Scala, MATLAB</span></li>
-									<li class="d-flex"><span>ML & AI:</span> <span>Scikit-Learn, TensorFlow, PyTorch, Keras, OpenCV, NLP, LLMs, Transformers, BERT, Time Series, Reinforcement Learning</span></li>
-									<li class="d-flex"><span>Big Data & Cloud:</span> <span>AWS (Redshift, S3, EC2, EMR), Azure (Data Explorer, Synapse, ML Studio), GCP (BigQuery), Hadoop, Apache Spark, Databricks</span></li>
-									<li class="d-flex"><span>Data Engineering:</span> <span>ETL, Apache Airflow, Apache Kafka, Snowflake, Spark Streaming</span></li>
-									<li class="d-flex"><span>BI & Visualization:</span> <span>Power BI, Tableau, Looker, Plotly, Seaborn, Matplotlib</span></li>
-									<li class="d-flex"><span>MLOps & DevOps:</span> <span>Docker, Kubernetes, MLflow, CI/CD, GitHub Actions, DVC</span></li>
-									<li class="d-flex"><span>Data Science Techniques:</span> <span>Exploratory Data Analysis, Feature Engineering, Model Optimization, Hyperparameter Tuning, Clustering, A/B Testing, Causal Inference, Anomaly Detection</span></li>
-									<li class="d-flex"><span>Optimization & Statistics:</span> <span>Bayesian Inference, Markov Chains, Monte Carlo Simulation, Gradient Descent, Graph Algorithms</span></li>
-									<li class="d-flex"><span>Project Management:</span> <span>Agile, Scrum, SDLC, JIRA, Risk Management, Stakeholder Communication</span></li>
-									<li class="d-flex"><span>Interests:</span> <span>AI Research, Data-Driven Storytelling, Responsible AI, Ethical AI, Personalized Recommendation Systems</span></li>
-								</ul>																
-							</div>
-						</div>
+      <div class="container">
+        <div class="row">
+          <div class="row d-flex align-items-stretch">
+            <div class="col-md-6 col-lg-5 d-flex">
+              <div class="img-about img d-flex align-items-stretch">
+                <div class="overlay">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="images/AshokImage.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Ashok Kasaram</span></p>
+                        <p><span class="title-s">Job Role: </span> <span>Data Science Professional</span></p>
+                        <p><span class="title-s">Experience: </span> <span>3+ Years</span></p>
+                        <p><span class="title-s">Address: </span> <span>Miami, Florida, USA</span></p>
+                      </div>
+                    </div>
+                  </div>
 
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="10">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/ashok-kasaram-7822151b4/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skills</p>
+
+                    <span>SQL</span> <span class="pull-right">95%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Python</span> <span class="pull-right">95%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Data Visualization (Power BI, Tableau, Matplotlib, Seaborn)</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Machine Learning &amp; Predictive Modeling</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Big Data &amp; Cloud (Azure, AWS, Databricks, Apache Spark)</span> <span class="pull-right">80%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>MLOps &amp; Model Deployment (MLflow, Docker, Kubernetes)</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+
+                    <span>Natural Language Processing (NLP, Transformers, BERT)</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+						
+                </div>
+              </div>
+            </div>
+					
+            <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+              <div class="row justify-content-start pb-3">
+                <div class="col-md-12 heading-section ftco-animate">
+                  <h1 class="big">About</h1>
+                  <h2 class="mb-4">About Me</h2>
+								
+                  <p>
+                    I’m Ashok Kasaram, a Data Scientist driven by a deep passion for solving real-world
+                    problems through AI and data-driven storytelling. With over three years of experience
+                    in data science, machine learning, and cloud computing, I have built scalable AI
+                    solutions, optimized data pipelines, and applied predictive modeling to drive measurable
+                    business impact. I recently completed my Master’s in Data Science &amp; Artificial
+                    Intelligence at Florida International University with a GPA of 3.86.
+                  </p>
+                  <p>
+                    My work centers on transforming raw data into meaningful insights, automating workflows
+                    with AI, and developing intelligent systems that enhance decision-making. I am especially
+                    fascinated by Generative AI, Responsible AI, and the ethical dimensions of machine
+                    learning—fields that are shaping the next generation of intelligent systems.
+                  </p>
+
+                  <ul class="about-info mt-4 px-md-0 px-2">
+                    <li class="d-flex"><span>Profile:</span> <span>Data Scientist | Machine Learning Engineer | AI Researcher</span></li>
+                    <li class="d-flex"><span>Domain Expertise:</span> <span>Retail, E-commerce, BFSI, Digital Marketing, Utilities, Healthcare</span></li>
+                    <li class="d-flex"><span>Education:</span> <span>Master’s in Data Science &amp; AI, Florida International University</span></li>
+                    <li class="d-flex"><span>Programming:</span> <span>Python, R, SQL, Java, JavaScript, Scala, MATLAB</span></li>
+                    <li class="d-flex"><span>ML &amp; AI:</span> <span>Scikit-Learn, TensorFlow, PyTorch, Keras, NLP, LLMs, Transformers, Time Series</span></li>
+                    <li class="d-flex"><span>Big Data &amp; Cloud:</span> <span>AWS, Azure, GCP, Hadoop, Apache Spark, Databricks</span></li>
+                    <li class="d-flex"><span>Data Engineering:</span> <span>ETL, Apache Airflow, Kafka, Snowflake, Spark Streaming</span></li>
+                    <li class="d-flex"><span>BI &amp; Visualization:</span> <span>Power BI, Tableau, Looker, Plotly, Seaborn, Matplotlib</span></li>
+                    <li class="d-flex"><span>MLOps &amp; DevOps:</span> <span>Docker, Kubernetes, MLflow, CI/CD, GitHub Actions</span></li>
+                    <li class="d-flex"><span>Techniques:</span> <span>EDA, Feature Engineering, Hyperparameter Tuning, Clustering, A/B Testing</span></li>
+                    <li class="d-flex"><span>Interests:</span> <span>AI Research, Data Storytelling, Responsible AI, Recommendation Systems</span></li>
+                  </ul>																
+                </div>
+              </div>
+
+              <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                <div class="text">
+                  <p class="mb-4">
+                    <span class="number" data-number="10">0</span> <span>+</span>
+                    <span>&nbsp; Projects completed</span>
+                  </p>
+                  <p><a href="https://www.linkedin.com/in/ashok-kasaram-7822151b4/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-
-
-	
     <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
+      <div class="container">
+        <div class="row justify-content-center pb-5">
           <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
+            <h1 class="big big-2">Resume</h1>
             <h2 class="mb-4">Resume</h2>
-            <p>Innovative and Results-driven professional with expertise in data science, machine learning, data engineering, and business intelligence. Skilled in building scalable AI solutions, designing data pipelines, developing predictive models, and driving business insights. Proficient in Python, SQL, R, and cloud-based technologies (Azure, AWS, GCP), with hands-on experience in MLOps, big data processing, and real-time analytics. Adept at transforming complex datasets into actionable insights through machine learning, statistical analysis, and visualization tools like Power BI and Tableau. Passionate about leveraging Generative AI, LLMs, and automation to optimize decision-making and streamline workflows across industries.</p>
+            <p>Innovative and results-driven professional with expertise in data science, machine learning, data engineering, and business intelligence. Skilled in building scalable AI solutions, designing data pipelines, developing predictive models, and driving business insights.</p>
           </div>
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
+        <div class="row">
+          <h1 class="big-4">Experience</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">July 2025 - Present</span>
+              <h2>Research Assistant</h2>
+              <span class="position">Florida International University</span>
+              <span class="mt-4"> &mdash; Miami, Florida, USA</span>
+              <p class="mt-4">
+                As a Research Assistant, I conduct experimentation and statistical analysis to evaluate machine learning models, design A/B tests, and collaborate with faculty to translate findings into actionable insights.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Jan 2025 - Apr 2025</span>
+              <h2>Operations Intern</h2>
+              <span class="position">Miami-Dade County</span>
+              <span class="mt-4"> &mdash; Miami, Florida, USA</span>
+              <p class="mt-4">
+                Built interactive dashboards to track overtime spending, automated reporting workflows, and supported data-driven decision-making for operational planning and financial accountability.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Jan 2024 - Apr 2025</span>
+              <h2>Teaching Assistant</h2>
+              <span class="position">Florida International University</span>
+              <span class="mt-4"> &mdash; Miami, Florida, USA</span>
+              <p class="mt-4">
+                Guided 250+ students in AI, data visualization, and programming courses; led labs, simplified ML concepts, and supported project evaluations and grading.
+              </p>
+            </div>
+          </div>				
+
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Dec 2021 - Jul 2023</span>
+              <h2>Data Engineer</h2>
+              <span class="position">LTIMindtree</span>
+              <span class="mt-4"> &mdash; Hyderabad, India</span>
+              <p class="mt-4">
+                Designed and maintained scalable data pipelines, optimized data workflows, and developed BI dashboards to support enterprise reporting and analytics.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">Sep 2021 - Jan 2021</span>
+              <h2>Associate Software Engineer</h2>
+              <span class="position">Accenture</span>
+              <span class="mt-4"> &mdash; Bengaluru, India</span>
+              <p class="mt-4">
+                Supported database optimization, data validation, and software integration efforts, laying the groundwork for later data engineering and analytics work.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <br><br>
+
+        <div class="row">
+          <h1 class="big-4">Education</h1>
+          <div class="underline"></div>
+        </div>
+        <br>
 		
-		<div class="row">
-			         
+        <div class="row">
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2023-2025</span>
+              <h2>Master of Science</h2>
+              <span class="position">Florida International University</span>
+              <p class="mt-4">Grade: 3.86</p>
+            </div>
+          </div>
 
-                <div class="col-md-12">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">July 2025 - Present </span>
-						<h2>Research Assistant</h2>
-						<span class="position">Florida International University - </span>
-						<span class ="mt-4">Miami, Florida, USA</span>
-						<p class="mt-4">Florida International University is a Top 50 public university known for its high research activity (R1) and focus on environment, health, innovation, and justice, driving talent and innovation in Miami and globally.
-							<ul>
-								<li>As a Research Assistant, I conduct large-scale experimentation and statistical analysis to evaluate the performance of machine learning models and improve research outcomes. I design A/B experiments to measure algorithmic impact, apply causal inference techniques to interpret results, and translate findings into actionable insights for faculty and research teams. I collaborate closely with researchers and developers to define evaluation metrics, improve model reproducibility, and streamline experimental workflows. This role continues to strengthen my expertise in experimental design, statistical modeling, and machine learning evaluation, while enhancing my ability to communicate complex results clearly and effectively. </li>
-							</ul>
-						</p>
-						</p>
-					</div>
-				</div>		
-				<div class="col-md-12">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jan 2025 - April 2025 </span>
-						<h2>Operations Intern</h2>
-						<span class="position">Miami-Dade County</span>
-						<span class="mt-4">Miami, Florida, USA</span>
-						<p class="mt-4">
-							Miami-Dade County is one of the largest and most diverse metropolitan areas in the United States, serving over 2.7 million residents. It plays a crucial role in public sector innovation, leveraging data-driven solutions to optimize transportation, environmental sustainability, public utilities, and emergency response. The county actively integrates advanced analytics, machine learning, and cloud technologies to improve operational efficiency, resource allocation, and policymaking.
-							<ul>
-								<li>As part of the Operations team, I focused on optimizing budget management and workforce efficiency across multiple divisions. I built interactive dashboards to visualize overtime spending and departmental performance, designed automated workflows to streamline data validation and reporting, and developed predictive models to identify cost anomalies and inefficiencies. My work helped leadership gain clearer visibility into resource utilization and informed data-driven decisions that improved overall operational planning and financial accountability.</li>
-							</ul>
-						</p>
-					</div>
-				</div>
+          <div class="col-md-6">
+            <div class="resume-wrap ftco-animate">
+              <span class="date">2017-2021</span>
+              <h2>Bachelor of Technology</h2>
+              <span class="position">Jawaharlal Nehru Technological University</span>
+              <p class="mt-4">Grade: 3.55 (First class with distinction)</p>
+            </div>
+          </div>
+        </div>
 
-				<div class="col-md-12">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Jan 2024 - April 2025 </span>
-						<h2>Teaching Assistant</h2>
-						<span class="position">Florida International University - </span>
-						<span class ="mt-4">Miami, Florida, USA</span>
-						<p class="mt-4">Florida International University is a Top 50 public university known for its high research activity (R1) and focus on environment, health, innovation, and justice, driving talent and innovation in Miami and globally.
-							<ul>
-								<li>As a Teaching Assistant, I supported academic learning and research in artificial intelligence, data visualization, and programming. I guided over 250 students through coursework, helped simplify complex machine learning concepts, and led interactive sessions to strengthen analytical and problem-solving skills. I also streamlined grading workflows, organized project evaluations, and provided one-on-one mentorship to improve student performance. Through this role, I developed strong communication and leadership skills while fostering a data-driven learning environment that empowered students to apply theory to real-world problems.</li>
-							</ul>
-						</p>
-						</p>
-					</div>
-				</div>				
-
-				<div class="col-md-12">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">Dec 2021 - July 2023</span>
-						<h2>Data Engineer</h2>
-						<span class="position">LTIMindtree - </span>
-						<span class ="mt-4">Hyderabad, India</span>
-						<p class="mt-4">LTIMindtree is a global technology consulting firm that partners with over 700 clients to drive digital transformation and innovation and leveraging the expertise of 81,000+ professionals across more than 30 countries.
-							<ul>
-								<li>As a Data Engineer, I contributed to the design and maintenance of scalable data pipelines that supported large enterprise systems. I worked with high-volume datasets to ensure data accuracy, consistency, and performance across multiple business domains. I focused on optimizing data workflows, improving refresh times, and enhancing pipeline reliability to support faster reporting and analytics. I developed interactive dashboards for key business metrics, automated manual data processes to boost team productivity, and collaborated with senior engineers and analysts to deliver end-to-end data solutions that improved decision-making efficiency. Through this role, I gained hands-on experience in data modeling, performance tuning, and workflow automation, which strengthened my ability to manage data systems at scale and contribute to cross-functional analytics initiatives.</li>
-							</ul>
-						</p>
-					</div>
-				</div>
-
-
-					<div class="col-md-12">
-						<div class="resume-wrap ftco-animate">
-							<span class="date">Sep 2021- Jan 2021</span>
-							<h2>Associate Software Engineer</h2>
-							<span class="position">Accenture - </span>
-							<span class ="mt-4">Bengaluru, India</span>
-							<p class="mt-4">Accenture is a global professional services leader, driving digital transformation and innovation for businesses and governments across 120+ countries, delivering value through technology and industry expertise.
-								<ul>
-									<li> As an Associate Software Engineer, I supported the development and optimization of database systems to improve reporting accuracy and performance. I analyzed and refined database structures, implemented data validation checks, and enhanced query efficiency to ensure reliable information flow across teams. I participated in testing and integration activities, ensuring that updates maintained data integrity and system stability. This experience strengthened my understanding of database management, software testing, and collaborative development, providing a solid foundation for my transition into data engineering and analytics roles.
-									</li>
-								</ul>
-							</p>
-						</div>
-					</div>
-				</div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2023-2025</span>
-    					<h2>Master of Science</h2>
-    					<span class="position">Florida International University</span>
-    					<p class="mt-4">Grade: 3.83</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2017-2021</span>
-    					<h2>Bachelor's of Technology</h2>
-    					<span class="position">JAWAHARLAL NEHRU TECHNOLOGICAL UNIVERSITY</span>
-    					<p class="mt-4">Grade: 3.55(First class distinction. ) </p>
-    				</div>
-				</div>
-    		</div>
-
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
-    	</div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-6 text-center ftco-animate">
+            <p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-   
-
+    <!-- PROJECTS SECTION -->
     <section class="ftco-section" id="project-section">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Projects</h1>
             <h2 class="mb-4">Projects</h2>
-            <p>Below are the sample Data Science projects on Python,Machine Learning, SQL & Power BI.</p>
+            <p>Below are sample Data Science projects on Python, Machine Learning, SQL &amp; Power BI.</p>
           </div>
         </div>
+
         <div class="row d-flex">
+
+          <!-- Ad Performance Analytics -->
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/AshokKasaram/Multilingual-Language-Detection-Project" class="block-20 zoom-effect" style="background-image: url('images/project_1.jpg');">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/Ad-Performance-Analytics" class="block-20 zoom-effect">
+                <img src="images/Ad Performance.png" class="project-img" alt="Ad Performance Analytics">
               </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="https://github.com/AshokKasaram/Multilingual-Language-Detection-Project">Multilingual Language Detection</a></h3>
-                <p>Led the development of an NLP-based language detection system, enhancing multilingual communication efficiency. Applied advanced machine learning algorithms like KNN, Random Forest, and Naive Bayes to achieve high accuracy in language classification.</p>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/Ad-Performance-Analytics">
+                    Ad Performance Analytics (ETL • SQL • Power BI)
+                  </a>
+                </h3>
+                <p>
+                  Built a complete marketing analytics pipeline by extracting raw ad data, transforming it with Python, loading it into MySQL, and visualizing KPIs (CTR, CPC, CPM, ROI) in an interactive Power BI dashboard.
+                </p>
               </div>
             </div>
           </div>
+
+          <!-- GenAI Support Assistant -->
           <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/AshokKasaram/Inventory-Demand-Forecasting-Project" class="block-20 zoom-effect" style="background-image: url('images/project3.png');">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/GenAI-Assistant-for-Spare-Parts" class="block-20 zoom-effect">
+                <img src="images/genai.png" class="project-img" alt="GenAI Support Assistant">
               </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="https://github.com/AshokKasaram/Inventory-Demand-Forecasting-Project">Inventory Demand Forecasting</a></h3>
-                <p>Developed a retail sales demand forecasting model using Python (pandas, scikit-learn), conducting EDA and feature engineering to improve accuracy. Implemented Linear Regression, Random Forest, and XGBoost, optimizing hyperparameters to achieve a low mean absolute error (MAE).</p>
-              </div>
-            </div>		
-          </div> 
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/AshokKasaram/University-Registration-System-Project" class="block-20 zoom-effect" style="background-image: url('images/project_4.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-                <h3 class="heading"><a href="https://github.com/AshokKasaram/University-Registration-System-Project">University Registration System</a></h3>
-                <p>Developed a University Registration System using Python and Tkinter, integrating MySQL for secure data management and enhancing the user interface with dynamic backgrounds via the PIL library.</p>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/GenAI-Assistant-for-Spare-Parts">
+                    GenAI Support Assistant (RAG + LLM)
+                  </a>
+                </h3>
+                <p>
+                  Developed an offline GenAI chatbot using a RAG pipeline with FAISS, Sentence Transformers, and Flan-T5, enabling internal teams to retrieve SOP and spare-parts documentation via natural language.
+                </p>
               </div>
             </div>
           </div>
-        </div>
-	<!--<br>--> 
-		<!-- added justify-content-center to center align the last two projects -->
-	<div class="row d-flex">
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/AshokKasaram/Music-Therapy" class="block-20 zoom-effect" style="background-image: url('images/MusicTherapy.JPG');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading"><a href="https://github.com/AshokKasaram/Music-Therapy">Music Therapy</a></h3>
-				  <p>I'm currently developing a project that explores the impact of various music genres on mental health conditions like anxiety, depression, insomnia, and OCD. This involves data preprocessing, exploratory data analysis, feature engineering, and correlation analysis. I am applying techniques such as heatmaps, scatter plots, and regression analysis to uncover relationships between listening habits and mental health outcomes. The goal is to identify actionable insights for designing personalized music therapy recommendations to improve mental well-being.</p>
-				</div>
-			  </div>
-			</div>
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/AshokKasaram/Twitter-Sentiment-Analysis" class="block-20 zoom-effect" style="background-image: url('images/ProjectTSA.JPG');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading"><a href="https://github.com/AshokKasaram/Twitter-Sentiment-Analysis">Twitter Sentiment Analysis - Ongoing Project</a></h3>
-				  <p>I'm currently developing a Sentiment Analysis model to classify tweets as Positive, Negative, or Neutral using advanced NLP techniques. This project aims to provide organizations with actionable insights to enhance engagement and refine their strategies based on public sentiment.</p>
-				</div>
-			  </div>
-			</div>
-	</div>	
-<!--
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://github.com/AshokKasaram/Twitter-Sentiment-Analysis" class="block-20 zoom-effect" style="background-image: url('images/ProjectTSA.JPG');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-				  <h3 class="heading"><a href="https://github.com/AshokKasaram/Twitter-Sentiment-Analysis">Twitter Sentiment Analysis - Ongoing Project</a></h3>
-				  <p>I'm currently developing a Sentiment Analysis model to classify tweets as Positive, Negative, or Neutral using advanced NLP techniques. This project aims to provide organizations with actionable insights to enhance engagement and refine their strategies based on public sentiment.</p>
-				</div>
-			  </div>
-			</div>
-			-->
+
+          <!-- 8PuzzleApp -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/8PuzzleApp" class="block-20 zoom-effect">
+                <img src="images/8 Puzzle App.png" class="project-img" alt="8PuzzleApp">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/8PuzzleApp">
+                    8PuzzleApp – AI Image Puzzle Solver
+                  </a>
+                </h3>
+                <p>
+                  Converts uploaded images into a 3×3 puzzle and solves them using the A* search algorithm with heuristics like Manhattan and Linear Conflict. Built with Flask, JavaScript, and Pillow.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- RetailMatrix -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/RetailMatrix-The-Intelligence-Engine-for-Ecommerce" class="block-20 zoom-effect">
+                <img src="images/Retail Matrix.png" class="project-img" alt="RetailMatrix">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/RetailMatrix-The-Intelligence-Engine-for-Ecommerce">
+                    RetailMatrix – Ecommerce Intelligence Engine
+                  </a>
+                </h3>
+                <p>
+                  End-to-end analytics and ML pipeline on the UCI Online Retail dataset, including RFM segmentation, product analytics, hybrid recommenders, and an XGBoost reorder prediction model.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Music Therapy -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/Music-Therapy" class="block-20 zoom-effect">
+                <img src="images/Music Therapy.png" class="project-img" alt="Music Therapy">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/Music-Therapy">
+                    Music Therapy – Personalized Mental Wellness Recommender
+                  </a>
+                </h3>
+                <p>
+                  Built clustering-based listener personas, ML models to predict emotional impact, and a hybrid recommender system integrated with the Spotify API for real-time genre and track recommendations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Spotify Skip-Rate A/B Testing -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/Spotify-SkipRate-A-B-testing" class="block-20 zoom-effect">
+                <img src="images/AB testing.png" class="project-img" alt="Spotify Skip Rate A/B Test">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/Spotify-SkipRate-A-B-testing">
+                    Spotify Skip-Rate A/B Testing Experiment
+                  </a>
+                </h3>
+                <p>
+                  Simulated ~500K streaming sessions to compare popularity-based vs. collaborative filtering recommendations, showing ~10% reduction in early skips and uplift in engagement metrics.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Multilingual Language Detection -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/Multilingual-Language-Detection-Project" class="block-20 zoom-effect">
+                <img src="images/project_1.jpg" class="project-img" alt="Multilingual Language Detection">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/Multilingual-Language-Detection-Project">
+                    Multilingual Language Detection
+                  </a>
+                </h3>
+                <p>
+                  NLP-based language classifier using KNN, Random Forest, and Naive Bayes to accurately identify languages and improve multilingual communication.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inventory Demand Forecasting -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end w-100">
+              <a href="https://github.com/AshokKasaram/Inventory-Demand-Forecasting-Project" class="block-20 zoom-effect">
+                <img src="images/project3.png" class="project-img" alt="Inventory Demand Forecasting">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/Inventory-Demand-Forecasting-Project">
+                    Inventory Demand Forecasting
+                  </a>
+                </h3>
+                <p>
+                  Retail demand forecasting using Linear Regression, Random Forest, and XGBoost with engineered features and optimized hyperparameters to minimize MAE.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- University Registration System -->
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry w-100">
+              <a href="https://github.com/AshokKasaram/University-Registration-System-Project" class="block-20 zoom-effect">
+                <img src="images/project_4.png" class="project-img" alt="University Registration System">
+              </a>
+              <div class="text mt-3">
+                <h3 class="heading">
+                  <a href="https://github.com/AshokKasaram/University-Registration-System-Project">
+                    University Registration System
+                  </a>
+                </h3>
+                <p>
+                  Desktop application using Python and Tkinter with MySQL backend and enhanced UI using PIL for managing university course registrations.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
     </section>
 
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       <div class="container">
-		<div class="row d-md-flex align-items-center">
+        <div class="row d-md-flex align-items-center">
           <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
             <div class="block-18">
               <div class="text">
@@ -558,26 +586,23 @@
         </div>
       </div>
 	
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>More projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I enjoy tackling business challenges &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/AshokKasaram" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
-
-
+      <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>More projects on<span> GitHub</span></h2>
+            <div class="heading">
+              <h4>I enjoy tackling business challenges &amp; uncovering hidden data stories</h4>
+              <br>
+              <p><a href="https://github.com/AshokKasaram" class="btn btn-primary py-3 px-5">GitHub</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
+        <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
@@ -587,99 +612,84 @@
 
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Miami, Florida, USA</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+ 786 794 3334</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">ashok.kasaram99@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="#">resumelink</a></p>
-	          </div>
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-map-signs"></span>
+              </div>
+              <h3 class="mb-4">Address</h3>
+              <p>Miami, Florida, USA</p>
+            </div>
           </div>
 
-		    <!-- <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/uLaTShUKXraAvHJ77" class="btn btn-primary py-3 px-5">Click Here</a> </h2>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href=""><span class="icon-youtube"></span></a></li>
-					  <li class="ftco-animate"><a href=""><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href=""><span class="icon-twitter"></span></a></li>
-					  <li class="ftco-animate"><a href=""><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href=""><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div> -->
-   </div>
- </section>
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-phone2"></span>
+              </div>
+              <h3 class="mb-4">Contact Number</h3>
+              <p><a href="tel://0101010101">+1 786 794 3334</a></p>
+            </div>
+          </div>
 
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-paper-plane"></span>
+              </div>
+              <h3 class="mb-4">Email Address</h3>
+              <p><a href="mailto:ashok.kasaram99@gmail.com">ashok.kasaram99@gmail.com</a></p>
+            </div>
+          </div>
 
- 
-	
+          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+            <div class="align-self-stretch box p-4 text-center">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <span class="icon-globe"></span>
+              </div>
+              <h3 class="mb-4">Download Resume</h3>
+              <p><a href="#">Resume Link</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script>
+              All rights reserved | Template by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+      <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+      </svg>
+    </div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
     
   </body>
 </html>
